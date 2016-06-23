@@ -21,69 +21,11 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'proper-lite' ); ?></a> 
 
 	<header id="masthead" class="site-header animated fadeIn delay-2">
-		<div class="site-branding">
-			
-            <?php if ( get_theme_mod( 'proper_lite_logo' ) ) : ?>
-              
-    			<div class="site-logo site-title"> 
-                
-       				<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'>
-                    
-                    	<img 
-                        	src='<?php echo esc_url( get_theme_mod( 'proper_lite_logo' ) ); ?>'
-                            
-							<?php if ( get_theme_mod( 'logo_size' ) ) : ?>
-                            	width="<?php echo esc_attr( get_theme_mod( 'logo_size', '120' )); ?>
-                            "<?php endif; ?> 
-                            
-                            alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-                    
-                    </a> 
-                    
-    			</div><!-- site-logo -->
-                
-			<?php else : ?>
-            
-    			<hgroup>
-       				<h1 class='site-title'>
-                    
-                    	<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'>
-                        
-							<?php bloginfo( 'name' ); ?>
-                            
-                    	</a>
-                        
-                    </h1>
-    			</hgroup>
-                
-			<?php endif; ?> 
-            
-		</div><!-- .site-branding -->
-        
     
     <?php if ( 'option1' == proper_lite_sanitize_index_content( get_theme_mod( 'proper_lite_menu_method' ) ) ) : ?>
                 
                 <div class="navigation-container">
                 
-                    <a id="sidr-menu" href="#sidr">
-                    
-                    <?php $menu_toggle_option = proper_lite_sanitize_menu_toggle_display( get_theme_mod( 'proper_lite_menu_toggle', 'icon' )); 
-    
-                        $proper_lite_menu_display = '';
-    
-                        if ( $menu_toggle_option == 'icon' ) {
-                    
-                            $proper_lite_menu_display = sprintf( '<i class="fa fa-bars"></i>' );
-                
-                        } else if ( $menu_toggle_option == 'label' ) {
-                    
-                            $proper_lite_menu_display = esc_html__( 'Menu', 'proper-lite' );
-                
-                        } 
-    
-                        echo wp_kses_post( $proper_lite_menu_display ); ?>
-                        
-                        </a>
         		</div>
                 
 			</header><!-- #masthead -->
@@ -104,25 +46,6 @@
         		</div><!-- navigation-container --> 
                 
                 <div class="navigation-container classic-menu">
-        			<a id="sidr-menu" href="#sidr">
-                    
-                    <?php $menu_toggle_option = proper_lite_sanitize_menu_toggle_display( get_theme_mod( 'proper_lite_menu_toggle', 'icon' )); 
-    
-                        $proper_lite_menu_display = '';
-    
-                        if ( $menu_toggle_option == 'icon' ) {
-                    
-                            $proper_lite_menu_display = sprintf( '<i class="fa fa-bars"></i>' );
-                
-                        } else if ( $menu_toggle_option == 'label' ) {
-                    
-                            $proper_lite_menu_display = esc_html__( 'Menu', 'proper-lite' );
-                
-                        } 
-    
-                        echo wp_kses_post( $proper_lite_menu_display ); ?>
-                        
-                        </a>
         		</div> 
                 
                 
