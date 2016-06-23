@@ -19,6 +19,7 @@
 				endif;  ?>
                 
                 <?php if ( 'post' == get_post_type() ) : ?>
+                <!-- JOE NOTE: Remove this .entry-meta section to kill meta data display around posts. -->
                 <div class="entry-meta">
                     <?php proper_lite_posted_on(); ?>
                 </div><!-- .entry-meta -->
