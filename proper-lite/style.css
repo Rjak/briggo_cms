@@ -1347,6 +1347,10 @@ ul.social-media-icons {
 	text-align: center;
 }
 
+#archive-content-container article p {
+	text-align: left;
+}
+
 #archive-content-container article:hover {
 	background: #f9f9f9;
     -o-transition: all 0.2s ease-in-out 0s;
